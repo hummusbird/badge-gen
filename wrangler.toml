@@ -7,3 +7,8 @@ compatibility_flags = ["nodejs_compat"]
 [[routes]]
 pattern = "badge.les.bi"
 custom_domain = true
+
+[[rules]]
+type = "Text"
+globs = ["*.svg"]
+fallthrough = true
