@@ -170,3 +170,6 @@ dist
 
 .dev.vars
 .wrangler/
+
+# some aras proudly use macOS
+.DS_Store
