@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg1" width="88" height="31" version="1.1" viewBox="0 0 88 31" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  
+  
+  <g id="flags" stroke-width=".01">
+    <g id="trans">
+      <path id="trans-5" d="m0 0h88v31h-88z" fill="#5bcefa"/>
+      <path id="trans-4" d="m0 0h88v25h-88z" fill="#f5a9b8"/>
+      <path id="trans-3" d="m0 0h88v19h-88z" fill="#fff"/>
+      <path id="trans-2" d="m0 0h88v12h-88z" fill="#f5a9b8"/>
+      <path id="trans-1" d="m0 0h88v6h-88z" fill="#5bcefa"/>
+    </g>
+    <g id="bi">
+      <path id="bi-3" d="m0 0h88v31h-88z" fill="#0038a8"/>
+      <path id="bi-2" d="m0 0h88v19h-88z" fill="#9b4f96"/>
+      <path id="bi-1" d="m0 0h88v12h-88z" fill="#d60270"/>
+    </g>
+    <g id="lesbi">
+      <path id="lesbi-5" d="m0 0h88v31h-88z" fill="#a20160"/>
+      <path id="lesbi-4" d="m0 0h88v25h-88z" fill="#d161a2"/>
+      <path id="lesbi-3" d="m0 0h88v19h-88z" fill="#fff"/>
+      <path id="lesbi-2" d="m0 0h88v12h-88z" fill="#fd9855"/>
+      <path id="lesbi-1" d="m0 0h88v6h-88z" fill="#d62e02"/>
+    </g>
+  </g>
+  <g id="clips" display="none">
+    <rect id="half" width="44" height="31" display="inline"/>
+    <path id="45-degree" d="m0 0h72.5l-57 31h-15.5z" display="inline"/>
+    <path id="diagonal" d="m88 0-88 31v-31z" display="inline"/>
+    <path id="75-degree" d="m0 0h53.7l-19.4 31h-34.3z" display="inline"/>
+  </g>
+</svg>
