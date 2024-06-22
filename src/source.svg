@@ -23,7 +23,19 @@
       <path id="pan-3" d="m0 0h88v31h-88z" fill="#1ab3ff"/>
       <path id="pan-2" d="m0 0h88v21h-88z" fill="#ffd700"/>
       <path id="pan-1" d="m0 0h88v10h-88z" fill="#ff1c8d"/>
-    </g>  
+    </g>
+    <g id="genderqueer">
+      <path id="genderqueer-3" d="m0 0h88v31h-88z" fill="#49821e"/>
+      <path id="genderqueer-2" d="m0 0h88v21h-88z" fill="#fff"/>
+      <path id="genderqueer-1" d="m0 0h88v10h-88z" fill="#b57fdd"/>
+    </g>
+    <g id="poly">
+      <path id="poly-3" d="m0 0h88v31h-88z" fill="#340c46"/>
+      <path id="poly-2" d="m0 0h88v21h-88z" fill="#e50051"/>
+      <path id="poly-1" d="m0 0h88v10h-88z" fill="#009fe3"/>
+      <path id="poly-quad" d="m0 0h11l11 10-22 21z" fill="#fff"/>
+      <path id="poly-heart" d="m8.8724 5.409c-1.2122 1.2122-1.2122 3.1785 0 4.3907l0.19384 0.19383s-0.20652 0.20659-0.20652 0.20659c-1.2122 1.2122-1.2122 3.1785 0 4.3907 1.2122 1.2122 3.1785 1.2122 4.3907 0l0.20652-0.20659 4.3907-4.3907 0.04008-0.04004-4.4191-4.3395-0.01166-0.011-0.19384-0.19383c-1.2122-1.2122-3.1785-1.2122-4.3907 0z" fill="#fcbf00"/>
+    </g>
     <g id="enby">
       <path id="enby-4" d="m0 0h88v31h-88z" fill="#000"/>
       <path id="enby-3" d="m0 0h88v23h-88z" fill="#9d59d2"/>
@@ -61,6 +73,14 @@
       <path id="lesbi-3" d="m0 0h88v19h-88z" fill="#fff"/>
       <path id="lesbi-2" d="m0 0h88v12h-88z" fill="#fd9855"/>
       <path id="lesbi-1" d="m0 0h88v6h-88z" fill="#d62e02"/>
+    </g>
+    <g id="rainbow">
+      <path id="rainbow-6" d="m0 0h88v31h-88z" fill="#770088"/>
+      <path id="rainbow-5" d="m0 0h88v25h-88z" fill="#004cff"/>
+      <path id="rainbow-4" d="m0 0h88v20h-88z" fill="#028121"/>
+      <path id="rainbow-3" d="m0 0h88v15h-88z" fill="#ffee00"/>
+      <path id="rainbow-2" d="m0 0h88v10h-88z" fill="#ff8d00"/>
+      <path id="rainbow-1" d="m0 0h88v5h-88z" fill="#e50000"/>
     </g>
     <g id="lesbi-7">
       <path id="lesbi-7-7" d="m0 0h88v31h-88z" fill="#a30262"/>
