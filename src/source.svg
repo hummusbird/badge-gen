@@ -29,7 +29,13 @@
       <path id="enby-3" d="m0 0h88v23h-88z" fill="#9d59d2"/>
       <path id="enby-2" d="m0 0h88v16h-88z" fill="#fff"/>
       <path id="enby-1" d="m0 0h88v8h-88z" fill="#fff430"/>
-    </g>  
+    </g>
+    <g id="ace">
+      <path id="enby-4" d="m0 0h88v31h-88z" fill="#810081"/>
+      <path id="enby-3" d="m0 0h88v23h-88z" fill="#fff"/>
+      <path id="enby-2" d="m0 0h88v16h-88z" fill="#a4a4a4"/>
+      <path id="enby-1" d="m0 0h88v8h-88z" fill="#000"/>
+    </g>
     <g id="trans">
       <path id="trans-5" d="m0 0h88v31h-88z" fill="#5bcefa"/>
       <path id="trans-4" d="m0 0h88v25h-88z" fill="#f5a9b8"/>
