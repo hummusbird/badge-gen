@@ -3,16 +3,23 @@
   
   
   <g id="flags" stroke-width=".01">
+    <g id="fluid">
+      <path id="fluid-5" d="m0 0h88v31h-88z" fill="#303cbe"/>
+      <path id="fluid-4" d="m0 0h88v25h-88z" fill="000"/>
+      <path id="fluid-3" d="m0 0h88v19h-88z" fill="#bf12d7"/>
+      <path id="fluid-2" d="m0 0h88v12h-88z" fill="#fff"/>
+      <path id="fluid-1" d="m0 0h88v6h-88z" fill="#fe76a2"/>
+    </g>
     <g id="pan">
-      <path id="pan-3" d="m0 0h88v31h-88z" fill="#ff1c8d"/>
+      <path id="pan-3" d="m0 0h88v31h-88z" fill="#1ab3ff"/>
       <path id="pan-2" d="m0 0h88v21h-88z" fill="#ffd700"/>
-      <path id="pan-1" d="m0 0h88v10h-88z" fill="#1ab3ff"/>
+      <path id="pan-1" d="m0 0h88v10h-88z" fill="#ff1c8d"/>
     </g>  
     <g id="enby">
-      <path id="enby-4" d="m0 0h88v31h-88z" fill="#fff430"/>
-      <path id="enby-3" d="m0 0h88v23h-88z" fill="#fff"/>
-      <path id="enby-2" d="m0 0h88v16h-88z" fill="#9c59d1"/>
-      <path id="enby-1" d="m0 0h88v8h-88z" fill="#000"/>
+      <path id="enby-4" d="m0 0h88v31h-88z" fill="#000"/>
+      <path id="enby-3" d="m0 0h88v23h-88z" fill="#9d59d2"/>
+      <path id="enby-2" d="m0 0h88v16h-88z" fill="#fff"/>
+      <path id="enby-1" d="m0 0h88v8h-88z" fill="#fff430"/>
     </g>  
     <g id="trans">
       <path id="trans-5" d="m0 0h88v31h-88z" fill="#5bcefa"/>
