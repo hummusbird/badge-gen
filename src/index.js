@@ -8,7 +8,7 @@ const { template, flags, clips, overlays } = parseSourceSvg(sourceSvg);
 
 export default {
 	async fetch(request, env, ctx) {
-		const svg = buildBadgeSvg(template, clips['half'], overlays['outset'], flags['lesbi'], flags['trans']);
+		const svg = buildBadgeSvg(template, clips['half'], overlays['outset-double'], flags['lesbi'], flags['trans']);
 		const buf = await svg2png(svg, {});
 		return new Response(buf, { headers: { 'content-type': 'image/png' } });
 	},
