@@ -3,9 +3,18 @@
   
   
   <g id="flags" stroke-width=".01">
+    <g id="agender">
+      <path id="agender-7" d="m0 0h88v31h-88z" fill="#000"/>
+      <path id="agender-6" d="m0 0h88v27h-88z" fill="#bababa"/>
+      <path id="agender-5" d="m0 0h88v22h-88z" fill="#fff"/>
+      <path id="agender-4" d="m0 0h88v18h-88z" fill="#baf484"/>
+      <path id="agender-3" d="m0 0h88v13h-88z" fill="#fff"/>
+      <path id="agender-2" d="m0 0h88v9h-88z" fill="#bababa"/>
+      <path id="agender-1" d="m0 0h88v4h-88z" fill="#000"/>
+    </g>
     <g id="fluid">
       <path id="fluid-5" d="m0 0h88v31h-88z" fill="#303cbe"/>
-      <path id="fluid-4" d="m0 0h88v25h-88z" fill="000"/>
+      <path id="fluid-4" d="m0 0h88v25h-88z" fill="#000"/>
       <path id="fluid-3" d="m0 0h88v19h-88z" fill="#bf12d7"/>
       <path id="fluid-2" d="m0 0h88v12h-88z" fill="#fff"/>
       <path id="fluid-1" d="m0 0h88v6h-88z" fill="#fe76a2"/>
@@ -39,6 +48,15 @@
       <path id="lesbi-3" d="m0 0h88v19h-88z" fill="#fff"/>
       <path id="lesbi-2" d="m0 0h88v12h-88z" fill="#fd9855"/>
       <path id="lesbi-1" d="m0 0h88v6h-88z" fill="#d62e02"/>
+    </g>
+    <g id="lesbi-7">
+      <path id="lesbi-7-7" d="m0 0h88v31h-88z" fill="#a30262"/>
+      <path id="lesbi-7-6" d="m0 0h88v27h-88z" fill="#b55690"/>
+      <path id="lesbi-7-5" d="m0 0h88v22h-88z" fill="#d162a4"/>
+      <path id="lesbi-7-4" d="m0 0h88v18h-88z" fill="#fff"/>
+      <path id="lesbi-7-3" d="m0 0h88v13h-88z" fill="#ff9a56"/>
+      <path id="lesbi-7-2" d="m0 0h88v9h-88z" fill="#ef7627"/>
+      <path id="lesbi-7-1" d="m0 0h88v4h-88z" fill="#d52d00"/>
     </g>
   </g>
   <g id="clips" display="none">
