@@ -40,6 +40,7 @@ export const buildBadgeSvg = (svg, clip, overlay, flag1, flag2) => {
     svg.appendChild(flag2);
     svg.appendChild(flag1);
 
+    overlay.setAttribute("shape-rendering", "crispEdges");
     svg.appendChild(overlay);
 
     return svg.toString();
