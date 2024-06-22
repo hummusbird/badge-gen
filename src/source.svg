@@ -78,4 +78,12 @@
     <path id="diagonal" d="m88 0-88 31v-31z" display="inline"/>
     <path id="75-degree" d="m0 0h53.7l-19.4 31h-34.3z" display="inline"/>
   </g>
+  <g id="overlays">
+    <g id="outset">
+      <path id="outset-2" d="m0 6e-8h2v29l-2 2zm0 0h88l-2 2h-86z" fill="#fff" fill-opacity=".66667"/>
+      <path id="outset-1" d="m86 2 2-2v31h-2zm-84 27h86v2h-88z" fill="#000" fill-opacity=".66667"/>
+    </g>
+    <g id="none">
+    </g>
+  </g>
 </svg>

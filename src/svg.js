@@ -17,14 +17,15 @@ export const parseSourceSvg = (sourceSvg) => {
 
     const flags = childrenToDictionary(doc.getElementById('flags'));
     const clips = childrenToDictionary(doc.getElementById('clips'));
+    const overlays = childrenToDictionary(doc.getElementById('overlays'));
 
     let svg = doc.getElementsByTagName('svg')[0];
     let emptySvg = svg.cloneNode(false);
 
-    return { template: emptySvg, flags: flags, clips: clips };
+    return { template: emptySvg, flags: flags, clips: clips, overlays: overlays };
 };
 
-export const buildBadgeSvg = (svg, clip, flag1, flag2) => {
+export const buildBadgeSvg = (svg, clip, overlay, flag1, flag2) => {
     const doc = svg.ownerDocument;
     const defs = doc.createElement("defs");
     const clipPath = doc.createElement("clipPath");
@@ -38,6 +39,8 @@ export const buildBadgeSvg = (svg, clip, flag1, flag2) => {
 
     svg.appendChild(flag2);
     svg.appendChild(flag1);
+
+    svg.appendChild(overlay);
 
     return svg.toString();
 };
