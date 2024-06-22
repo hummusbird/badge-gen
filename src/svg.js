@@ -36,6 +36,8 @@ export const buildBadgeSvg = (svg, clip, overlay, flag1, flag2) => {
     svg.appendChild(defs);
 
     flag1.setAttribute("clip-path", "url(#clip)");
+    flag1.setAttribute("shape-rendering", "crispEdges");
+    flag2.setAttribute("shape-rendering", "crispEdges");
 
     svg.appendChild(flag2);
     svg.appendChild(flag1);
