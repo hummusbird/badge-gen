@@ -7,6 +7,7 @@ function childrenToDictionary(node) {
         if (child.nodeType !== 1) {
             continue;
         }
+        child.setAttribute("shape-rendering", "crispEdges");
         dict[child.getAttribute('id')] = child;
     }
     return dict;
@@ -26,24 +27,25 @@ export const parseSourceSvg = (sourceSvg) => {
 };
 
 export const buildBadgeSvg = (svg, clip, overlay, flag1, flag2) => {
+    flag1 = flag1.cloneNode(true);
+    flag2 = flag2.cloneNode(true);
+
     const doc = svg.ownerDocument;
     const defs = doc.createElement("defs");
     const clipPath = doc.createElement("clipPath");
-    clipPath.setAttribute("shape-rendering", "crispEdges");
     clipPath.setAttribute("id", "clip");
     clipPath.appendChild(clip);
     defs.appendChild(clipPath);
     svg.appendChild(defs);
 
     flag1.setAttribute("clip-path", "url(#clip)");
-    flag1.setAttribute("shape-rendering", "crispEdges");
-    flag2.setAttribute("shape-rendering", "crispEdges");
 
     svg.appendChild(flag2);
     svg.appendChild(flag1);
 
-    overlay.setAttribute("shape-rendering", "crispEdges");
-    svg.appendChild(overlay);
+    if (overlay) {
+        svg.appendChild(overlay);
+    }
 
     return svg.toString();
 };
