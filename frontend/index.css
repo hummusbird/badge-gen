@@ -1,0 +1,75 @@
+:root {
+    --text-color: #222222;
+    --surface: #c0c0c0;
+    --button-highlight: #ffffff;
+    --button-face: #dfdfdf;
+    --button-shadow: #808080;
+    --window-frame: #0a0a0a;
+    --dialog-blue: #000080;
+    --dialog-blue-light: #1084d0;
+    --dialog-gray: #808080;
+    --dialog-gray-light: #b5b5b5;
+    --link-blue: #0000ff;
+    --border-field: inset -1px -1px var(--button-highlight),
+        inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
+        inset 2px 2px var(--window-frame);
+}
+
+body {
+    background-color: #008080;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+.windowarea {
+    display: grid;
+    height: 120px;
+    width: fit-content;
+    align-items: center;
+
+    padding: 12px 8px;
+    margin: 0;
+    margin-top: 6px;
+    gap: 10px;
+}
+
+.button-stack {
+    display: grid;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    margin: 5px;
+}
+
+button.active {
+    box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a,
+        inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+}
+
+#options-window {
+    overflow-y: scroll;
+}
+
+#final-badge-window {
+    background-image: url("images/background.png");
+    background-size: 7.5px;
+}
+
+.window-field-stack {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.border {
+    box-shadow: var(--border-field);
+}
