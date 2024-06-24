@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>88x31 Badge Generator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="window main">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                88x31 Pride Badge Generator
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body" style="display:inline-flex;">
+            <div>
+                <fieldset class="button-stack">
+                    <legend>Select a setting:</legend>
+                    <button class="active">Flag 1</button>
+                    <button disabled>Flag 2</button>
+                    <button>Clip mask</button>
+                    <button>Overlay</button>
+                    <button>Reset all</button>
+                </fieldset>
+            </div>
+
+            <div class="window-field-stack">
+                <label for="options-window">Options:</label>
+                <div class="windowarea border" id="options-window">
+                    <img id="final-badge" src="https://badge.les.bi/88x31/bi/bi/half">
+                    <img id="final-badge" src="https://badge.les.bi/88x31/enby/enby/half">
+                    <img id="final-badge" src="https://badge.les.bi/88x31/trans/trans/half">
+                    <img id="final-badge" src="https://badge.les.bi/88x31/lesbi/lesbi/half">
+                </div>
+            </div>
+
+            <div class="window-field-stack">
+                <label for="final-badge-window">Final result:</label>
+                <div class="windowarea border" id="final-badge-window">
+                    <img id="final-badge" src=" https://badge.les.bi/88x31/lesbi/trans/half/outset-double">
+                </div>
+            </div>
+        </div>
+
+        <div class="window-body">
+            <button>Copy URL</button>
+            <button>Download PNG</button>
+        </div>
+
+        <div class="status-bar">
+            <p class="status-bar-field">by <a href="https://github.com/aprosvetova">anya</a> & <a href="https://github.com/hummusbird">maeve</a></p>
+            <p class="status-bar-field"><a href="https://les.bi">les.bi</a></p>
+            <p class="status-bar-field"><a href="https://github.com/hummusbird/badge-gen">GitHub</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
