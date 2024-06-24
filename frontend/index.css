@@ -30,6 +30,10 @@ body {
     width: fit-content;
 }
 
+.window-body {
+    gap: 10px;
+}
+
 .windowarea {
     display: grid;
     height: 120px;
@@ -42,12 +46,22 @@ body {
     gap: 10px;
 }
 
-.button-stack {
+.settings-fieldset {
     display: grid;
     align-items: center;
     gap: 5px;
     width: 100px;
-    margin: 5px;
+}
+
+.download-fieldset {
+    display: inline-flex
+}
+
+.download-buttons {
+    margin-left: 10px;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
 }
 
 button.active {
@@ -57,6 +71,7 @@ button.active {
 
 #options-window {
     overflow-y: scroll;
+    background-color: white;
 }
 
 #final-badge-window {
@@ -67,9 +82,13 @@ button.active {
 .window-field-stack {
     display: flex;
     flex-direction: column;
-    margin: 5px;
 }
 
 .border {
     box-shadow: var(--border-field);
+}
+
+.focused {
+    outline: 1px dotted #000000;
+    outline-offset: 2px;
 }
