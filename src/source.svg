@@ -15,6 +15,12 @@
       <path id="lesbi-2" d="m0 0h88v12h-88z" fill="#fd9855"/>
       <path id="lesbi-1" d="m0 0h88v6h-88z" fill="#d62e02"/>
     </g>
+    <g id="enby">
+      <path id="enby-4" d="m0 0h88v31h-88z" fill="#000"/>
+      <path id="enby-3" d="m0 0h88v23h-88z" fill="#9d59d2"/>
+      <path id="enby-2" d="m0 0h88v16h-88z" fill="#fff"/>
+      <path id="enby-1" d="m0 0h88v8h-88z" fill="#fff430"/>
+    </g>
     <g id="bi">
       <path id="bi-3" d="m0 0h88v31h-88z" fill="#0038a8"/>
       <path id="bi-2" d="m0 0h88v19h-88z" fill="#9b4f96"/>
@@ -28,12 +34,6 @@
       <path id="rainbow-2" d="m0 0h88v10h-88z" fill="#ff8d00"/>
       <path id="rainbow-1" d="m0 0h88v5h-88z" fill="#e50000"/>
     </g>
-    <g id="enby">
-      <path id="enby-4" d="m0 0h88v31h-88z" fill="#000"/>
-      <path id="enby-3" d="m0 0h88v23h-88z" fill="#9d59d2"/>
-      <path id="enby-2" d="m0 0h88v16h-88z" fill="#fff"/>
-      <path id="enby-1" d="m0 0h88v8h-88z" fill="#fff430"/>
-    </g>
     <g id="lesbi-7">
       <path id="lesbi-7-7" d="m0 0h88v31h-88z" fill="#a30262"/>
       <path id="lesbi-7-6" d="m0 0h88v27h-88z" fill="#b55690"/>
@@ -42,6 +42,22 @@
       <path id="lesbi-7-3" d="m0 0h88v13h-88z" fill="#ff9a56"/>
       <path id="lesbi-7-2" d="m0 0h88v9h-88z" fill="#ef7627"/>
       <path id="lesbi-7-1" d="m0 0h88v4h-88z" fill="#d52d00"/>
+    </g>
+    <g id="gay">
+      <path id="gay-5" d="m0 0h88v31h-88z" fill="#3d1a78"/>
+      <path id="gay-4" d="m0 0h88v25h-88z" fill="#7bade2"/>
+      <path id="gay-3" d="m0 0h88v19h-88z" fill="#fff"/>
+      <path id="gay-2" d="m0 0h88v12h-88z" fill="#98e8c1"/>
+      <path id="gay-1" d="m0 0h88v6h-88z" fill="#078d70"/>
+    </g>
+    <g id="gay-7">
+      <path id="gay-7-1" d="m0 0h88v31h-88z" fill="#3D1A78"/>
+      <path id="gay-7-2" d="m0 0h88v27h-88z" fill="#5049CC"/>
+      <path id="gay-7-3" d="m0 0h88v22h-88z" fill="#7BADE2"/>
+      <path id="gay-7-4" d="m0 0h88v18h-88z" fill="#fff"/>
+      <path id="gay-7-5" d="m0 0h88v13h-88z" fill="#98E8C1"/>
+      <path id="gay-7-6" d="m0 0h88v9h-88z" fill="#26CEAA"/>
+      <path id="gay-7-7" d="m0 0h88v4h-88z" fill="#078D70"/>
     </g>
     <g id="agender">
       <path id="agender-7" d="m0 0h88v31h-88z" fill="#000"/>
@@ -71,6 +87,14 @@
       <path id="aro-3" d="m0 0h88v19h-88z" fill="#fff"/>
       <path id="aro-2" d="m0 0h88v12h-88z" fill="#a8d47a"/>
       <path id="aro-1" d="m0 0h88v6h-88z" fill="#3ba740"/>
+    </g>
+    <g id="neptunic">
+      <path id="neptunic-6" d="m0 0h88v31h-88z" fill="#9799EF"/>
+      <path id="neptunic-5" d="m0 0h88v25h-88z" fill="#99B0EA"/>
+      <path id="neptunic-4" d="m0 0h88v20h-88z" fill="#A1E6EF"/>
+      <path id="neptunic-3" d="m0 0h88v15h-88z" fill="#74E9D4"/>
+      <path id="neptunic-2" d="m0 0h88v10h-88z" fill="#3AD5C8"/>
+      <path id="neptunic-1" d="m0 0h88v5h-88z" fill="#039BBA"/>
     </g>
     <g id="pan">
       <path id="pan-3" d="m0 0h88v31h-88z" fill="#1ab3ff"/>
