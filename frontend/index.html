@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             </div>
         </div>
 
-        <div class="window-body" style="display:inline-flex;">
+        <div class="window-body space-windowbody">
             <fieldset class="settings-fieldset">
                 <legend>Select a setting</legend>
                 <button class="active">Flag 1</button>
@@ -34,38 +35,48 @@
             <div class="window-field-stack">
                 <label for="options-window">Options</label>
                 <div class="windowarea border" id="options-window">
-                    <img class="focused" src="https://badge.les.bi/88x31/bi/bi/half">
-                    <img src="https://badge.les.bi/88x31/enby/enby/half">
+                    <img src="https://badge.les.bi/88x31/bi/bi/half">
+                    <img class="focused" src="https://badge.les.bi/88x31/enby/enby/half">
                     <img src="https://badge.les.bi/88x31/trans/trans/half">
                     <img src="https://badge.les.bi/88x31/lesbi/lesbi/half">
+                    <img src="https://badge.les.bi/88x31/agender/agender/half">
+                    <img src="https://badge.les.bi/88x31/ace/ace/half">
+                    <img src="https://badge.les.bi/88x31/aro/aro/half">
                 </div>
             </div>
 
             <div class="window-field-stack">
                 <label for="final-badge-window">Final result</label>
                 <div class="windowarea border" id="final-badge-window">
-                    <img id="final-badge" src=" https://badge.les.bi/88x31/lesbi/trans/half/outset-double">
+                    <img id="final-badge" src="https://badge.les.bi/88x31/bi/enby/75-degree/outset">
                 </div>
             </div>
         </div>
 
-        <div class="window-body">
+        <div class="window-body space-windowbody">
             <fieldset class="download-fieldset">
                 <legend>Export</legend>
-                <div>
-                    <div class="field-row">
-                        <input checked id="PNG" type="radio" name="download">
-                        <label for="PNG">PNG</label>
+                <div class="download-radio">
+                    <div>
+                        <div class="field-row">
+                            <input checked id="PNG" type="radio" name="export">
+                            <label for="PNG">PNG</label>
+                        </div>
+                        <div class="field-row">
+                            <input id="SVG" type="radio" name="export">
+                            <label for="SVG">SVG</label>
+                        </div>
                     </div>
-                    <div class="field-row">
-                        <input id="SVG" type="radio" name="download">
-                        <label for="SVG">SVG</label>
+                    <div class="download-buttons">
+                        <button>Download</button>
+                        <button>Copy URL</button>
+                        <button>Copy HTML</button>
                     </div>
                 </div>
-                <div class="download-buttons">
-                    <button>Download</button>
-                    <button>Copy URL</button>
+                <div class="field-row-stacked">
+                    <textarea id="html-textarea" rows="3"><a href="https://badge.les.bi"><img title="badge.les.bi" style="image-rendering: pixelated;" src="https://badge.les.bi/88x31/bi/enby/75-degree/outset"></a></textarea>
                 </div>
+
             </fieldset>
         </div>
 
