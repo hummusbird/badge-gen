@@ -64,4 +64,12 @@ app.get('/options.json', (c) => {
 	});
 })
 
+app.get('/options.json', (c) => {
+	return c.json({
+		flags: Object.fromEntries(Object.entries(flags).map(([key, val]) => [key, val.toString()])),
+		clips: Object.keys(clips),
+		overlays: Object.keys(overlays)
+	});
+})
+
 export default app
