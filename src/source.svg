@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="88" height="31" version="1.1" viewBox="0 0 88 31" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+<defs id="defs1">
+  <radialGradient id="radialGradient2" cx="44" cy="1.3123" r="64" gradientTransform="matrix(.78125 0 0 .19531 9.625 2.2437)" gradientUnits="userSpaceOnUse">
+    <stop id="stop1" stop-color="#c5c5c5" stop-opacity=".32788" offset="0"/>
+    d<stop id="stop2" stop-color="#fff" stop-opacity=".43592" offset="1"/>
+  </radialGradient>
+  <linearGradient id="linearGradient10" x2="88" y1="15.5" y2="15.5" gradientTransform="matrix(.35227 0 0 2.8387 -1.321e-7 -88)" gradientUnits="userSpaceOnUse">
+    <stop id="stop10" stop-color="#9c9c9c" stop-opacity="0" offset="0"/>
+    <stop id="stop9" stop-color="#4a4a4a" stop-opacity=".51973" offset="1"/>
+  </linearGradient>
+</defs>
+
   <g id="flags" stroke-width=".01">
     <g id="trans">
       <path id="trans-5" d="m0 0h88v31h-88z" fill="#5bcefa"/>
@@ -128,6 +140,10 @@
     <path id="triangle" d="M 44,15.5 0,31 V 0 Z"/>
   </g>
   <g id="overlays">
+    <g id="gloss">
+      <ellipse id="path1" cx="44" cy="2.5" rx="50" ry="12.5" fill="url(#radialGradient2)" stroke-width=".99656"/>
+      <rect id="rect1" transform="rotate(90)" y="-88" width="31" height="88" fill="url(#linearGradient10)"/>
+    </g>
     <g id="outset">
       <path id="outset-2" d="m0 6e-8h2v29l-2 2zm0 0h88l-2 2h-86z" fill="#fff" fill-opacity=".66667"/>
       <path id="outset-1" d="m86 2 2-2v31h-2zm-84 27h86v2h-88z" fill="#000" fill-opacity=".66667"/>
