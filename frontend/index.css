@@ -20,6 +20,10 @@ body {
     image-rendering: pixelated;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .main {
     position: absolute;
     top: 50%;
@@ -77,7 +81,7 @@ button.active {
         inset -2px -2px #dfdfdf, inset 2px 2px #808080;
 }
 
-#options-pane {
+.options-pane {
     overflow-y: scroll;
     background-image: url("images/bg-trans.png");
     background-color: lightcyan;
