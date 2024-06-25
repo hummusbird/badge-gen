@@ -15,6 +15,11 @@
         inset 2px 2px var(--window-frame);
 }
 
+::-webkit-scrollbar-button:vertical:start,
+::-webkit-scrollbar-button:vertical:end {
+    display: none;
+}
+
 body {
     background-color: #008080;
     image-rendering: pixelated;
