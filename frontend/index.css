@@ -93,7 +93,7 @@ button.active {
     background-color: lightcyan;
 }
 
-.dummy-flag {
+#dummy-flag {
     content: '';
     width: 88px;
     flex-shrink: 0;
