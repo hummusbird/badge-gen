@@ -79,11 +79,13 @@ button.active {
 
 #options-window {
     overflow-y: scroll;
+    background-image: url("images/bg-trans.png");
+    background-color: lightcyan;
 }
 
 #final-badge-window {
-    background-image: url("images/background.png");
-    background-size: 7.5px;
+    background-image: url("images/bg-trans.png");
+    background-color: khaki;
 }
 
 textarea {
