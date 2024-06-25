@@ -17,8 +17,6 @@
 
 body {
     background-color: #008080;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     image-rendering: pixelated;
 }
 
@@ -54,14 +52,24 @@ body {
 }
 
 .download-fieldset {
-    display: inline-flex
+    width: 100%;
 }
 
 .download-buttons {
-    margin-left: 10px;
     display: inline-flex;
+    margin-left: 10px;
     gap: 5px;
     align-items: center;
+}
+
+.download-radio {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.space-windowbody {
+    display: flex;
+    place-content: space-between;
 }
 
 button.active {
@@ -71,12 +79,18 @@ button.active {
 
 #options-window {
     overflow-y: scroll;
-    background-color: white;
 }
 
 #final-badge-window {
     background-image: url("images/background.png");
     background-size: 7.5px;
+}
+
+textarea {
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    resize: none;
 }
 
 .window-field-stack {
