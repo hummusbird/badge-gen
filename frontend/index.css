@@ -77,13 +77,13 @@ button.active {
         inset -2px -2px #dfdfdf, inset 2px 2px #808080;
 }
 
-#options-window {
+#options-pane {
     overflow-y: scroll;
     background-image: url("images/bg-trans.png");
     background-color: lightcyan;
 }
 
-#final-badge-window {
+#final-badge-pane {
     background-image: url("images/bg-trans.png");
     background-color: khaki;
 }
