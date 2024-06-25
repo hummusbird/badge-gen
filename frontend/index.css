@@ -93,6 +93,17 @@ button.active {
     background-color: lightcyan;
 }
 
+.dummy-flag {
+    content: '';
+    width: 88px;
+    flex-shrink: 0;
+}
+
+.flag {
+    width: 88px;
+    height: 31px;
+}
+
 #final-badge-pane {
     background-image: url("images/bg-trans.png");
     background-color: khaki;

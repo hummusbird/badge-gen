@@ -57,19 +57,11 @@ async function renderBadge(c) {
 	return c.body(buf, 200, { 'content-type': 'image/png' });
 }
 
-app.get('/options.json', (c) => {
-	return c.json({
-		flags: Object.keys(flags),
-		clips: Object.keys(clips),
-		overlays: Object.keys(overlays)
-	});
-})
-
 app.use('/options.json', cors())
 
 app.get('/options.json', (c) => {
 	return c.json({
-		flags: Object.fromEntries(Object.entries(flags).map(([key, val]) => [key, val.toString()])),
+		flags: Object.keys(flags),
 		clips: Object.keys(clips),
 		overlays: Object.keys(overlays)
 	});
