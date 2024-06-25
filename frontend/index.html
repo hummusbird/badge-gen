@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <script>init();</script>
 </head>
 
 <body>
@@ -34,14 +35,22 @@
 
             <div class="window-field-stack">
                 <label for="options-pane">Options</label>
-                <div class="windowarea border" id="options-pane">
-                    <img src="https://badge.les.bi/88x31/bi/bi/half">
+                <div class="windowarea border options-pane" id="flag-options">
+                    <!-- <img src="https://badge.les.bi/88x31/bi/bi/half">
                     <img class="focused" src="https://badge.les.bi/88x31/enby/enby/half">
                     <img src="https://badge.les.bi/88x31/trans/trans/half">
                     <img src="https://badge.les.bi/88x31/lesbi/lesbi/half">
                     <img src="https://badge.les.bi/88x31/agender/agender/half">
                     <img src="https://badge.les.bi/88x31/ace/ace/half">
-                    <img src="https://badge.les.bi/88x31/aro/aro/half">
+                    <img src="https://badge.les.bi/88x31/aro/aro/half"> -->
+                </div>
+
+                <div class="windowarea border options-pane hidden" id="clip-options">
+
+                </div>
+
+                <div class="windowarea border options-pane hidden" id="overlay-options">
+
                 </div>
             </div>
 
@@ -86,8 +95,6 @@
             <p class="status-bar-field"><a href="https://github.com/hummusbird/badge-gen">GitHub</a></p>
         </div>
     </div>
-
-    <script>stats();</script>
 </body>
 
 </html>

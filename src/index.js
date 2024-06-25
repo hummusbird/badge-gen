@@ -7,6 +7,7 @@ import sourceSvg from './source.svg';
 const { template, flags, clips, overlays } = parseSourceSvg(sourceSvg);
 
 import { Hono } from 'hono';
+import { cors } from 'hono/cors'
 const app = new Hono();
 
 
@@ -63,6 +64,8 @@ app.get('/options.json', (c) => {
 		overlays: Object.keys(overlays)
 	});
 })
+
+app.use('/options.json', cors())
 
 app.get('/options.json', (c) => {
 	return c.json({
