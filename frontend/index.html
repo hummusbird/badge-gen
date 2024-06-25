@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
-    <script>init();</script>
 </head>
 
 <body>
@@ -24,40 +23,37 @@
         </div>
 
         <div class="window-body space-windowbody">
-            <fieldset class="settings-fieldset">
+            <fieldset class="settings-fieldset" id="settings">
                 <legend>Select a setting</legend>
-                <button class="active">Flag 1</button>
-                <button disabled>Flag 2</button>
-                <button>Clip mask</button>
-                <button>Overlay</button>
+                <button class="active setting" id="flag1">Flag 1</button>
+                <button class="setting" id="flag2">Flag 2</button>
+                <button class="setting" id="clip">Clip mask</button>
+                <button class="setting" id="overlay">Overlay</button>
                 <button>Reset all</button>
             </fieldset>
 
             <div class="window-field-stack">
                 <label for="options-pane">Options</label>
-                <div class="windowarea border options-pane" id="flag-options">
-                    <!-- <img src="https://badge.les.bi/88x31/bi/bi/half">
-                    <img class="focused" src="https://badge.les.bi/88x31/enby/enby/half">
-                    <img src="https://badge.les.bi/88x31/trans/trans/half">
-                    <img src="https://badge.les.bi/88x31/lesbi/lesbi/half">
-                    <img src="https://badge.les.bi/88x31/agender/agender/half">
-                    <img src="https://badge.les.bi/88x31/ace/ace/half">
-                    <img src="https://badge.les.bi/88x31/aro/aro/half"> -->
-                </div>
+                <div id="options">
+                    <div class="windowarea border options-pane" id="flag-options">
+                        <div id="dummy-flag"></div>
+                        <img id="no-flag" class="flag hidden" src="https://cyber.dabamos.de/88x31/adobe_mwm_dir.gif">
+                    </div>
 
-                <div class="windowarea border options-pane hidden" id="clip-options">
+                    <div class="windowarea border options-pane hidden" id="clip-options">
 
-                </div>
+                    </div>
 
-                <div class="windowarea border options-pane hidden" id="overlay-options">
+                    <div class="windowarea border options-pane hidden" id="overlay-options">
 
+                    </div>
                 </div>
             </div>
 
             <div class="window-field-stack">
                 <label for="final-badge-pane">Final result</label>
                 <div class="windowarea border" id="final-badge-pane">
-                    <img id="final-badge" src="https://badge.les.bi/88x31/bi/enby/75-degree/outset">
+                    <img id="final-badge" class="flag">
                 </div>
             </div>
         </div>
@@ -68,12 +64,12 @@
                 <div class="download-radio">
                     <div>
                         <div class="field-row">
-                            <input checked id="PNG" type="radio" name="export">
-                            <label for="PNG">PNG</label>
+                            <input checked id="png" type="radio" name="export">
+                            <label for="png">PNG</label>
                         </div>
                         <div class="field-row">
-                            <input id="SVG" type="radio" name="export">
-                            <label for="SVG">SVG</label>
+                            <input id="svg" type="radio" name="export">
+                            <label for="svg">SVG</label>
                         </div>
                     </div>
                     <div class="download-buttons">
@@ -83,14 +79,15 @@
                     </div>
                 </div>
                 <div class="field-row-stacked">
-                    <textarea id="html-textarea" rows="3"><a href="https://badge.les.bi"><img title="badge.les.bi" style="image-rendering: pixelated;" src="https://badge.les.bi/88x31/bi/enby/75-degree/outset"></a></textarea>
+                    <textarea id="html-textarea" rows="4"></textarea>
                 </div>
 
             </fieldset>
         </div>
 
         <div class="status-bar">
-            <p class="status-bar-field">by <a href="https://github.com/aprosvetova">anya</a> & <a href="https://github.com/hummusbird">maeve</a></p>
+            <p class="status-bar-field">by <a href="https://github.com/aprosvetova">anya</a> & <a
+                    href="https://github.com/hummusbird">maeve</a></p>
             <p class="status-bar-field"><a href="https://les.bi">les.bi</a></p>
             <p class="status-bar-field"><a href="https://github.com/hummusbird/badge-gen">GitHub</a></p>
         </div>
