@@ -75,6 +75,10 @@
       <path id="fluid-2" d="m0 0h88v12h-88z" fill="#fff"/>
       <path id="fluid-1" d="m0 0h88v6h-88z" fill="#fe76a2"/>
     </g>
+    <g id="intersex">
+      <path id="intersex-2" d="m0 0h88v31h-88z" fill="#ffd800"/>
+      <circle id="intersex-1" cx="44" cy="15.5" r="9" fill="none" stroke="#7902aa" stroke-width="3.5"/>
+    </g>
     <g id="ace">
       <path id="ace-4" d="m0 0h88v31h-88z" fill="#810081"/>
       <path id="ace-3" d="m0 0h88v23h-88z" fill="#fff"/>
