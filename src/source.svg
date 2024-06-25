@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="svg1" width="88" height="31" version="1.1" viewBox="0 0 88 31" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-  
-  
+<svg width="88" height="31" version="1.1" viewBox="0 0 88 31" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
   <g id="flags" stroke-width=".01">
     <g id="agender">
       <path id="agender-7" d="m0 0h88v31h-88z" fill="#000"/>

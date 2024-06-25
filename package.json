@@ -11,8 +11,8 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
     "hono": "^4.4.7",
-    "svg2png-wasm": "^1.4.1",
-    "xmldom": "^0.6.0"
+    "svg2png-wasm": "^1.4.1"
   }
 }

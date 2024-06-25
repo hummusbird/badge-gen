@@ -1,4 +1,4 @@
-const { DOMParser } = require('xmldom');
+const { DOMParser } = require('@xmldom/xmldom');
 
 function childrenToDictionary(node) {
     let dict = {};
@@ -26,26 +26,30 @@ export const parseSourceSvg = (sourceSvg) => {
     return { template: emptySvg, flags: flags, clips: clips, overlays: overlays };
 };
 
-export const buildBadgeSvg = (svg, clip, overlay, flag1, flag2) => {
-    flag1 = flag1.cloneNode(true);
-    flag2 = flag2.cloneNode(true);
-
-    const doc = svg.ownerDocument;
-    const defs = doc.createElement("defs");
-    const clipPath = doc.createElement("clipPath");
-    clipPath.setAttribute("id", "clip");
-    clipPath.appendChild(clip);
-    defs.appendChild(clipPath);
-    svg.appendChild(defs);
-
-    flag1.setAttribute("clip-path", "url(#clip)");
-
-    svg.appendChild(flag2);
-    svg.appendChild(flag1);
-
-    if (overlay) {
-        svg.appendChild(overlay);
+export const buildBadgeSvg = (svg, flag1, flag2, clip, overlay) => {
+    const tmp = svg.cloneNode(true);
+    if (clip) {
+        const doc = svg.ownerDocument;
+        const defs = doc.createElement("defs");
+        const clipPath = doc.createElement("clipPath");
+        clipPath.setAttribute("id", "clip");
+        clipPath.appendChild(clip);
+        defs.appendChild(clipPath);
+        tmp.appendChild(defs);
     }
 
-    return svg.toString();
+    if (flag2) {
+        flag2 = flag2.cloneNode(true);
+        tmp.appendChild(flag2);
+    }
+
+    flag1 = flag1.cloneNode(true);
+    flag1.setAttribute("clip-path", "url(#clip)");
+    tmp.appendChild(flag1);
+
+    if (overlay) {
+        tmp.appendChild(overlay);
+    }
+
+    return tmp.toString();
 };
