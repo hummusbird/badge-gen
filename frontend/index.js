@@ -198,6 +198,13 @@ async function refreshExport() {
         title += ` ${currentChoice.flag2}`;
     }
     document.getElementById("html-textarea").value = `<a href="https://badge.les.bi"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${url}"></a>`;
+    document.getElementById("copyHTML").setAttribute("onclick", "copyToClipboard(`" + `<a href="https://badge.les.bi"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${url}"></a>` + "`)");
+    document.getElementById("copyURL").setAttribute("onclick", "copyToClipboard(`" + url + "`)");
+    document.getElementById("download").setAttribute("onclick", "location.href=`" + url + "`");
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text);
 }
 
 document.addEventListener("DOMContentLoaded", init);
