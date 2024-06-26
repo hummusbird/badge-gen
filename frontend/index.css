@@ -22,7 +22,6 @@
 
 body {
     background-color: #008080;
-    image-rendering: pixelated;
 }
 
 .hidden {
@@ -100,6 +99,7 @@ button.active {
 }
 
 .flag {
+    image-rendering: pixelated;
     width: 88px;
     height: 31px;
 }
