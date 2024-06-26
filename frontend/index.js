@@ -159,8 +159,12 @@ function miaow() {
     if (miaows == 69) {
         var audio = new Audio("https://img.birb.cc/j7sgRaw5.m4a");
         audio.play();
+        miaows++;
     }
-    miaows++;
+    else {
+        miaows++;
+    }
+
 }
 
 async function refreshView() {
