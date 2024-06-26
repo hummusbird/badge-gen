@@ -21,6 +21,7 @@
 }
 
 body {
+    user-select: none;
     background-color: #008080;
 }
 

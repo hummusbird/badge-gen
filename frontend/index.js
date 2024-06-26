@@ -12,6 +12,7 @@ var clipOptionsEl;
 var overlayOptionsEl;
 var finalBadgeEl;
 var settingsButtons;
+var miaows = 0;
 
 var exportType = 'png';
 
@@ -152,6 +153,14 @@ async function selectOption(option) {
         document.querySelector('#settings #clip').disabled = option === 'no-flag';
     }
     await refreshView();
+}
+
+function miaow() {
+    if (miaows == 69) {
+        var audio = new Audio("https://img.birb.cc/j7sgRaw5.m4a");
+        audio.play();
+    }
+    miaows++;
 }
 
 async function refreshView() {
