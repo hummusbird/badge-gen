@@ -111,6 +111,12 @@
       <path id="pan-2" d="m0 0h88v21h-88z" fill="#ffd700"/>
       <path id="pan-1" d="m0 0h88v10h-88z" fill="#ff1c8d"/>
     </g>
+    <g id="demi">
+      <path id="demi-3" d="m0 0h88v31h-88z" fill="#D2D2D2"/>
+      <path id="demi-2" d="m0 0h88v19h-88z" fill="#6E0070"/>
+      <path id="demi-1" d="m0 0h88v12h-88z" fill="#fff"/>
+      <path id="demi-quad" d="M0 0l31 15.5L0 31" fill="#000"/>
+    </g>
     <g id="genderqueer">
       <path id="genderqueer-3" d="m0 0h88v31h-88z" fill="#49821e"/>
       <path id="genderqueer-2" d="m0 0h88v21h-88z" fill="#fff"/>
