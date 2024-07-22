@@ -16,33 +16,33 @@ var miaows = 0;
 
 var exportType = 'png';
 
-const baseUrl = 'http://localhost:8787';
+const baseUrl = 'https://badge.les.bi';
 
 async function init() {
     noFlagEl = document.getElementById('no-flag');
     optionsEl = document.getElementById('options');
-    flagOptionsEl = document.getElementById("flag-options");
-    clipOptionsEl = document.getElementById("clip-options");
-    overlayOptionsEl = document.getElementById("overlay-options");
-    finalBadgeEl = document.getElementById("final-badge");
-    settingsButtons = document.querySelectorAll("#settings .setting");
+    flagOptionsEl = document.getElementById('flag-options');
+    clipOptionsEl = document.getElementById('clip-options');
+    overlayOptionsEl = document.getElementById('overlay-options');
+    finalBadgeEl = document.getElementById('final-badge');
+    settingsButtons = document.querySelectorAll('#settings .setting');
 
-    let res = await fetch(baseUrl + "/options.json");
+    let res = await fetch('/options.json');
     options = await res.json();
 
     document.getElementById('dummy-flag').remove();
     options.flags.forEach((flag) => {
-        let img = document.createElement("img");
-        img.setAttribute("class", "flag");
-        img.setAttribute("id", flag);
-        img.src = baseUrl + `/88x31/${flag}.png`;
+        let img = document.createElement('img');
+        img.setAttribute('class', 'flag');
+        img.setAttribute('id', flag);
+        img.src = `/88x31/${flag}.png`;
         flagOptionsEl.append(img);
     });
 
     currentChoice = {
         flag2: options.flags[1],
         clip: options.clips[0],
-        overlay: options.overlays[0]
+        overlay: options.overlays[0],
     };
 
     await selectOption(options.flags[0]);
@@ -85,7 +85,7 @@ function paneToElement(pane) {
 }
 
 function choiceToUrl(choice, ext) {
-    let url = baseUrl + `/88x31/${choice.flag1}`;
+    let url = `/88x31/${choice.flag1}`;
     if (choice.flag2 && choice.flag2 !== 'no-flag') {
         url += `/${choice.flag2}`;
         if (choice.clip) {
@@ -157,14 +157,12 @@ async function selectOption(option) {
 
 function miaow() {
     if (miaows == 69) {
-        var audio = new Audio("https://img.birb.cc/j7sgRaw5.m4a");
+        var audio = new Audio('https://img.birb.cc/j7sgRaw5.m4a');
         audio.play();
         miaows++;
-    }
-    else {
+    } else {
         miaows++;
     }
-
 }
 
 async function refreshView() {
@@ -173,9 +171,9 @@ async function refreshView() {
         options.clips.forEach((clip) => {
             let choice = { ...currentChoice };
             choice.clip = clip;
-            let img = document.createElement("img");
-            img.setAttribute("class", "flag");
-            img.setAttribute("id", clip);
+            let img = document.createElement('img');
+            img.setAttribute('class', 'flag');
+            img.setAttribute('id', clip);
             if (clip === currentChoice.clip) {
                 img.classList.add('focused');
             }
@@ -190,9 +188,9 @@ async function refreshView() {
         overlays.forEach((overlay) => {
             let choice = { ...currentChoice };
             choice.overlay = overlay;
-            let img = document.createElement("img");
-            img.setAttribute("class", "flag");
-            img.setAttribute("id", overlay);
+            let img = document.createElement('img');
+            img.setAttribute('class', 'flag');
+            img.setAttribute('id', overlay);
             if (overlay === currentChoice.overlay) {
                 img.classList.add('focused');
             }
@@ -210,14 +208,22 @@ async function refreshExport() {
     if (currentChoice.flag2 !== 'no-flag') {
         title += ` ${currentChoice.flag2}`;
     }
-    document.getElementById("html-textarea").value = `<a href="https://badge.les.bi"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${url}"></a>`;
-    document.getElementById("copyHTML").setAttribute("onclick", "copyToClipboard(`" + `<a href="https://badge.les.bi"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${url}"></a>` + "`)");
-    document.getElementById("copyURL").setAttribute("onclick", "copyToClipboard(`" + url + "`)");
-    document.getElementById("download").setAttribute("onclick", "window.open(`" + url + "`)");
+    document.getElementById('html-textarea').value =
+        `<a href="${baseUrl}"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${baseUrl}${url}"></a>`;
+    document
+        .getElementById('copyHTML')
+        .setAttribute(
+            'onclick',
+            'copyToClipboard(`' +
+            `<a href="${baseUrl}"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${baseUrl}${url}"></a>` +
+            '`)',
+        );
+    document.getElementById('copyURL').setAttribute('onclick', 'copyToClipboard(`' + url + '`)');
+    document.getElementById('download').setAttribute('onclick', 'window.open(`' + url + '`)');
 }
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text);
 }
 
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener('DOMContentLoaded', init);
