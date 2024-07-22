@@ -98,6 +98,13 @@
       <path id="aro-2" d="m0 0h88v12h-88z" fill="#a8d47a"/>
       <path id="aro-1" d="m0 0h88v6h-88z" fill="#3ba740"/>
     </g>
+    <g id="aroace">
+      <path id="aroace-5" d="m0 0h88v31h-88z" fill="#1e3f54"/>
+      <path id="aroace-4" d="m0 0h88v25h-88z" fill="#45bcee"/>
+      <path id="aroace-3" d="m0 0h88v19h-88z" fill="#fff"/>
+      <path id="aroace-2" d="m0 0h88v12h-88z" fill="#f6d317"/>
+      <path id="aroace-1" d="m0 0h88v6h-88z" fill="#ef9007"/>
+    </g>
     <g id="neptunic">
       <path id="neptunic-6" d="m0 0h88v31h-88z" fill="#9799EF"/>
       <path id="neptunic-5" d="m0 0h88v25h-88z" fill="#99B0EA"/>
