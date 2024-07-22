@@ -218,7 +218,7 @@ async function refreshExport() {
             `<a href="${baseUrl}"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${baseUrl}${url}"></a>` +
             '`)',
         );
-    document.getElementById('copyURL').setAttribute('onclick', 'copyToClipboard(`' + url + '`)');
+    document.getElementById('copyURL').setAttribute('onclick', 'copyToClipboard(`' + baseUrl + url + '`)');
     document.getElementById('download').setAttribute('onclick', 'window.open(`' + url + '`)');
 }
 
