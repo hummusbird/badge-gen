@@ -72,4 +72,6 @@ app.get('/options.json', (c) => {
 
 app.use('/*', serveStatic({ root: './frontend' }));
 
+console.log('Serving...');
+
 serve(app);
