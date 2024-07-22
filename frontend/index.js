@@ -164,7 +164,6 @@ function miaow() {
     else {
         miaows++;
     }
-
 }
 
 async function refreshView() {
