@@ -73,6 +73,8 @@ body {
 
 .download-radio {
     display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 10px;
 }
 
