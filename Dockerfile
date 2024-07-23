@@ -1,17 +1,17 @@
-FROM node:20-alpine
+FROM oven/bun:1-alpine
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN mkdir -p /home/bun/app/node_modules && chown -R bun:bun /home/bun/app
 
-WORKDIR /home/node/app
+WORKDIR /home/bun/app
 
-COPY --chown=node:node package*.json ./
+COPY --chown=bun:bun package.json bun.lockb ./
 
-USER node
+USER bun
 
-RUN npm install
+RUN bun install --frozen-lockfile --production
 
-COPY --chown=node:node . .
+COPY --chown=bun:bun . .
 
 EXPOSE 3000
 
-CMD [ "node", "src/index.js" ]
+CMD [ "bun", "run", "src/index.js" ]

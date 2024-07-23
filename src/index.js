@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 import { initialize, svg2png } from 'svg2png-wasm';
-import { serveStatic } from '@hono/node-server/serve-static';
+import { serveStatic } from 'hono/bun';
 await initialize(fs.readFileSync('./node_modules/svg2png-wasm/svg2png_wasm_bg.wasm'));
 
 import { parseSourceSvg, buildBadgeSvg } from './svg.js';
@@ -9,7 +9,6 @@ import { parseSourceSvg, buildBadgeSvg } from './svg.js';
 let sourceSvg = fs.readFileSync('src/source.svg', 'utf8');
 const { template, flags, clips, overlays } = parseSourceSvg(sourceSvg);
 
-import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 const app = new Hono();
@@ -74,4 +73,4 @@ app.use('/*', serveStatic({ root: './frontend' }));
 
 console.log('Serving...');
 
-serve(app);
+export default app;
