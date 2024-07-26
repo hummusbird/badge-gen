@@ -35,6 +35,7 @@ async function init() {
         let img = document.createElement('img');
         img.setAttribute('class', 'flag');
         img.setAttribute('id', flag);
+        img.setAttribute('title', flag);
         img.src = `/88x31/${flag}.png`;
         flagOptionsEl.append(img);
     });
