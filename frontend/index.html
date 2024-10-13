@@ -37,6 +37,16 @@
             <div class="window-field-stack">
                 <label for="options-pane">Options</label>
                 <div id="options">
+                    <!-- 
+                        issues with this: 
+                        1. width has to be set manually. we can't have the actual windowarea within this to do "fit-content"
+                        2. the scrollbar "covers" the border, so we have to use clip-path to clip the right side of the box-shadow
+                        3. scrolling breaks - since this div is "above" the windowarea, we can't scroll anymore.
+                    :-->
+
+                    <!-- <div style="position: absolute; width: 88px; clip-path: inset(0 2px 0 0);" class="windowarea border">
+                    </div> -->
+
                     <div class="windowarea border options-pane" id="flag-options">
                         <div id="dummy-flag"></div>
                         <img id="no-flag" class="flag hidden">
