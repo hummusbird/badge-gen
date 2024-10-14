@@ -113,6 +113,15 @@
       <path id="neptunic-2" d="m0 0h88v10h-88z" fill="#3AD5C8"/>
       <path id="neptunic-1" d="m0 0h88v5h-88z" fill="#039BBA"/>
     </g>
+    <g id="genderfae">
+      <path id="genderfae-7" d="m0 0h88v31h-88z" fill="#ab7edd"/>
+      <path id="genderfae-6" d="m0 0h88v27h-88z" fill="#db8ae3"/>
+      <path id="genderfae-5" d="m0 0h88v22h-88z" fill="#fca3c4"/>
+      <path id="genderfae-4" d="m0 0h88v18h-88z" fill="#fff"/>
+      <path id="genderfae-3" d="m0 0h88v13h-88z" fill="#faf9ce"/>
+      <path id="genderfae-2" d="m0 0h88v9h-88z" fill="#c2deae"/>
+      <path id="genderfae-1" d="m0 0h88v4h-88z" fill="#95c4a4"/>
+    </g>
     <g id="pan">
       <path id="pan-3" d="m0 0h88v31h-88z" fill="#1ab3ff"/>
       <path id="pan-2" d="m0 0h88v21h-88z" fill="#ffd700"/>
