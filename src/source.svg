@@ -159,8 +159,18 @@
     <g id="outset-double">
       <path id="outset-double-4" d="m0 6e-8h2v29l-2 2zm0 0 44-6e-8 -2 2-42 1e-7z" fill="#fff" fill-opacity=".66667"/>
       <path id="outset-double-3" d="m44 0h2v29l-2 2zm0 0 44.1-1e-7 -2 2-42 1e-7z" fill="#fff" fill-opacity=".66667"/>
-      <path id="outset-double-2" d="m86 2 2-2v31h-2zm-40 27h42v2h-44z" fill-opacity=".66667"/>
-      <path id="outset-double-1" d="m42 2 2-2v31h-2zm-40 27h42v2h-44z" fill-opacity=".66667"/>
+      <path id="outset-double-2" d="m86 2 2-2v31h-2zm-40 27h42v2h-44z" fill="#000" fill-opacity=".66667"/>
+      <path id="outset-double-1" d="m42 2 2-2v31h-2zm-40 27h42v2h-44z" fill="#000" fill-opacity=".66667"/>
+    </g>
+    <g id="outset-invert">
+      <path id="outset-invert-2" d="m0 6e-8h2v29l-2 2zm0 0h88l-2 2h-86z" fill="#000" fill-opacity=".66667"/>
+      <path id="outset-invert-1" d="m86 2 2-2v31h-2zm-84 27h86v2h-88z" fill="#fff" fill-opacity=".66667"/>
+    </g>
+    <g id="outset-double-invert">
+      <path id="outset-double-invert-4" d="m0 6e-8h2v29l-2 2zm0 0 44-6e-8 -2 2-42 1e-7z" fill="#000" fill-opacity=".66667"/>
+      <path id="outset-double-invert-3" d="m44 0h2v29l-2 2zm0 0 44.1-1e-7 -2 2-42 1e-7z" fill="#000" fill-opacity=".66667"/>
+      <path id="outset-double-invert-2" d="m86 2 2-2v31h-2zm-40 27h42v2h-44z" fill="#fff" fill-opacity=".66667"/>
+      <path id="outset-double-invert-1" d="m42 2 2-2v31h-2zm-40 27h42v2h-44z" fill="#fff" fill-opacity=".66667"/>
     </g>
     <g id="gloss">
       <radialGradient id="GlossCircle" cx="44" cy="1.3123" r="64" gradientTransform="matrix(.78125 0 0 .19531 9.625 2.2437)">
