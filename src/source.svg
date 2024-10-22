@@ -127,6 +127,11 @@
       <path id="pan-2" d="m0 0h88v21h-88z" fill="#ffd700"/>
       <path id="pan-1" d="m0 0h88v10h-88z" fill="#ff1c8d"/>
     </g>
+    <g id="polysexual">
+      <path id="polysexual-3" d="m0 0h88v31h-88z" fill="#1594F6"/>
+      <path id="polysexual-2" d="m0 0h88v21h-88z" fill="#01D66A"/>
+      <path id="polysexual-1" d="m0 0h88v10h-88z" fill="#F714BA"/>
+    </g>
     <g id="demi">
       <path id="demi-3" d="m0 0h88v31h-88z" fill="#D2D2D2"/>
       <path id="demi-2" d="m0 0h88v19h-88z" fill="#6E0070"/>
