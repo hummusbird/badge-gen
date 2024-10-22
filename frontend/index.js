@@ -209,6 +209,7 @@ async function refreshExport() {
     if (currentChoice.flag2 !== 'no-flag') {
         title += ` ${currentChoice.flag2}`;
     }
+    
     document.getElementById('html-textarea').value =
         `<a href="${baseUrl}"><img title="${title}" ${exportType === 'png' ? 'style="image-rendering: pixelated;"' : ''} src="${baseUrl}${url}"></a>`;
     document
@@ -221,6 +222,7 @@ async function refreshExport() {
         );
     document.getElementById('copyURL').setAttribute('onclick', 'copyToClipboard(`' + baseUrl + url + '`)');
     document.getElementById('download').setAttribute('onclick', 'window.open(`' + url + '`)');
+    document.getElementById('copyMarkdown').setAttribute('onclick', 'copyToClipboard(`![' + title + '](' + baseUrl + url + ')`)');
 }
 
 function copyToClipboard(text) {
